@@ -1,0 +1,639 @@
+@font-face {
+    font-family: Futura;
+    src: url(./Futura-Bold.ttf);
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(./Gilroy-Medium.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+*::selection {
+    color: #fff;
+    background-color: #000;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(45deg, #0ff, #f0f, #ff0);
+
+
+}
+
+#nav {
+    /* height: 100px; */
+    width: 100%;
+    /* background-color: burlywood; */
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#nav #nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#links {
+    padding: 10px;
+}
+
+#nav-part1 {
+    /* background-color: RED; */
+    height: 82px;
+    overflow: hidden;
+}
+
+#nav-part1 svg {
+    display: block;
+}
+
+#nav-part2 #links a {
+    text-transform: uppercase;
+
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 20px;
+}
+
+#icons {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #F7F7F7;
+}
+
+#nav-part2 #icons i {
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+
+#cursor {
+    height: 150px;
+    width: 150px;
+    background-image: url('BMW Resources/logo png.png');
+    opacity: 0.5;
+    background-size: cover; /* Ensures the image covers the entire circle */
+    background-position: center; /* Centers the image */
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+
+#page1 {
+    min-height: 100vh;
+    /* background-color: aqua; */
+    position: relative;
+    width: 100%;
+    padding: 0 1vw;
+    padding-top: 20vh;
+
+}
+
+#page1 h1 {
+    font-size: 15.8vw;
+    text-transform: uppercase;
+    font-family: futura;
+    line-height: 14vw;
+    letter-spacing: -8px;
+}
+
+#video-container {
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    margin-top: 1vw;
+    position: relative;
+}
+
+#video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container #play {
+    padding: 3vw 2.2vw;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-size: 1.3vw;
+    position: fixed;
+    text-transform: uppercase;
+    font-family: futura;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+
+}
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1vw;
+    justify-content: space-between;
+}
+
+#page2 .elem {
+    height: 100%;
+    width: 31%;
+    /* background-color: red; */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1px 1px 35px 0px;
+    
+}
+#page2 #elem2{
+    border-radius: 1px 1px 25px 35px;
+}
+#page2 #elem3{
+    border-radius: 1px 1px 0px 35px;
+}
+
+
+#page2 .elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+    
+}
+
+.dets{
+    margin-top: -120%;
+}
+
+#page2 .elem .dets {
+    height: 40px;
+    border-radius: 50px;
+    width: 70%;
+    position: absolute;
+    z-index: 9;
+    background-color: rgb(229, 156, 186);
+}
+
+#page2 .elem .dets p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+#page3 {
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.child p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+    text-transform: uppercase;
+    padding: 10px;
+
+}
+
+.child {
+    height: 54vh;
+    width: 38vw;
+    /* background-color: red; */
+    /* border: 2px solid #000; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.child img {
+    height: 100%;
+    border: 10px solid #fff;
+    /* border-radius: 50%; */
+}
+
+#page4{
+    min-height:75vh;
+    width: 100%;
+    margin-top: 10px;
+    background-image: url('BMW Resources/banner2.jpg');
+    background-size: 100% 100%;  
+}
+
+#page5 {
+    height: 70vh;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 1%;
+    background-image: url('BMW Resources/banner\ electric.jpg');   
+    background-size: 100% 100%;  
+}
+
+
+/* footer */
+
+
+.bmw-container {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(245, 246, 240);
+}
+
+/* Offers Section */
+.offers-section {
+    margin-bottom: 40px;
+}
+
+.offers-heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.emi-text {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.know-more-link {
+    color: #0066b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Buttons & Links */
+.find-bmw-button {
+
+    background-color: #000;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.all-models-link {
+    display: block;
+    color: #0066b3;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+/* Footer Columns */
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    /* gap: 100px; */
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+}
+
+.footer-col h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.footer-col li {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: #666;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+/* Legal Text */
+.legal-text {
+    margin-top: 40px;
+    margin-left: 40%;
+    font-size: 16px;
+    color: #c2b6b6;
+}
+
+
+#page6 {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+.description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: black;
+}
+
+
+
+
+
+
+@media (max-width:600px) {
+
+    #nav {
+        /* height: 100px; */
+        width: 100%;
+        /* background-color: burlywood; */
+        position: fixed;
+        z-index: 99;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    #nav #nav-part2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #links {
+        padding: 10px;
+        display: none;
+    }
+
+    #nav-part1 {
+        /* background-color: RED; */
+        height: 67px;
+        overflow: hidden;
+    }
+
+    #nav-part1 svg {
+        display: block;
+        height: 67px;
+        width: 80px;
+    }
+    #nav #twogoodlogo{
+        height: 40px;
+        margin-left: -20px;
+    }
+
+    #icons {
+        padding: 7px;
+        border-radius: 50px;
+        background-color: #F7F7F7;
+    }
+
+    #nav-part2 #icons i {
+        font-size: 15px;
+        margin: 0 20px;
+        font-weight: 100;
+    }
+
+    #page1 {
+        /* background-color: red; */
+        min-height: 70vh;
+        width: 100%;
+        padding: 0 3vw;
+        padding-top: 25vh;
+
+    }
+
+    #page1 h1 {
+        font-size: 15.5vw;
+        letter-spacing: -3px;
+    }
+
+    #video-container {
+        height: 25vh;
+        margin-top: 3vw;
+    }
+
+    #video-container #play {
+        padding: 9.5vw 7.2vw;
+        font-size: 4.5vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    #page2 {
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 5vw 3vw;
+        flex-direction: column;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+
+    #page2 .elem {
+        height: 100vh;
+        width: 100%;
+        /* background-color: red; */
+        overflow: hidden;
+        margin-bottom: 3vw;
+    }
+
+    #page2 .elem .dets {
+        height: 40px;
+        border-radius: 50px;
+        width: 70%;
+        position: absolute;
+        z-index: 9;
+        background-color: rgb(229, 156, 186);
+
+    }
+    @media (max-width: 600px) {
+        #page3 {
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+    
+        .child {
+            height: 40vh;
+            width: 80vw;
+            margin: 10px 0;
+        }
+    
+        .child img {
+            border-width: 5px;
+        }
+    
+        #page4,
+        #page5 {
+            background-size: cover;
+            background-position: center;
+            min-height: 50vh;
+            margin-top: 5px;
+        }
+    
+        /* Footer Adjustments */
+        .footer-columns {
+            flex-direction: column;
+            padding: 20px;
+            gap: 30px;
+        }
+    
+        .footer-col h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    
+        .footer-col a {
+            font-size: 16px;
+        }
+    
+        .legal-text {
+            margin-left: 0;
+            text-align: center;
+            font-size: 14px;
+            padding: 0 20px;
+        }
+    
+        /* Button Adjustments */
+        .find-bmw-button {
+            width: 100%;
+            padding: 15px 20px;
+            margin: 10px 0;
+        }
+    
+        .offers-heading {
+            font-size: 20px;
+            text-align: center;
+        }
+    
+        .emi-text {
+            font-size: 22px;
+            text-align: center;
+        }
+    
+        .know-more-link {
+            display: block;
+            text-align: center;
+        }
+    
+        .all-models-link {
+            text-align: center;
+        }
+    }
+    
+    /* Existing CSS remains below */
+
+}
